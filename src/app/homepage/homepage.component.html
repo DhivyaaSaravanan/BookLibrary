@@ -1,0 +1,22 @@
+<h2>Book Details</h2>
+
+<table>
+<div class="details">
+<tr>
+  <th>ID</th>
+  <th>BOOKNAME</th>
+  <th>IMAGE</th>
+  <TH>DETAILS</TH>
+</tr>
+
+
+@for(item of addList;track $index){
+  <tr>
+ <td> {{item.id}} </td>
+ <td> {{item.bookname}}</td>
+  <td>{{item.url}}</td>
+  <td><a routerLink="">View details</a></td>
+</tr>
+}
+</div>
+</table>

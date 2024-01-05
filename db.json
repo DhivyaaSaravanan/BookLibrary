@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "addbooks": [
+    {
+      "id": 1,
+      "bookname": "Power of subconscious mind",
+      "url": "D:/taskbook/bookwebsite/src/assets/subcons.jpg",
+      "author": "Joseph Murphy",
+      "date": "04-03-1985"
+    },
+    {
+      "id": "2",
+      "bookname": "The Secret",
+      "url": "D:/taskbook/bookwebsite/src/assets/secret.jpg",
+      "author": "Rhonda Byrne",
+      "date": "01-09-1889"
+    }
+  ],
+  "managebooks": []
+}

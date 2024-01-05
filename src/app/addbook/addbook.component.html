@@ -1,0 +1,54 @@
+
+
+<form [formGroup]="addform" (ngSubmit)="submitaddform()">
+
+ <div class="form-control">
+  <h1>Add Books</h1>
+ </div>
+
+ <div class="form-control">
+  <label for="">Id</label>
+  <input type="text" formControlName="id">
+  @if(addform.controls['id'].errors?.['required'] && addform.controls['id'].touched){
+    <small>This field is required</small>
+  }
+ </div>
+
+ <div class="form-control">
+  <label for="">Bookname</label>
+  <input type="text" formControlName="bookname">
+  @if(addform.controls['bookname'].errors?.['required'] && addform.controls['bookname'].touched){
+    <small>This field is required</small>
+  }
+ </div>
+
+
+ <div class="form-control">
+  <label for="">Author</label>
+  <input type="text" formControlName="author">
+  @if(addform.controls['author'].errors?.['required'] && addform.controls['author'].touched){
+    <small>This field is required</small>
+  }
+ </div>
+
+ <div class="form-control">
+  <label for="">Date</label>
+  <input type="date" formControlName="date">
+  @if(addform.controls['date'].errors?.['required'] && addform.controls['date'].touched){
+    <small>This field is required</small>
+  }
+ </div>
+
+ <div class="form-control">
+  <label for="">Image Path</label>
+  <input type="url" formControlName="url">
+  @if(addform.controls['url'].errors?.['required'] && addform.controls['url'].touched){
+    <small>This field is required</small>
+  }
+ </div>
+
+
+ <div class="form-control">
+  <button type="submit">Add Info</button>
+ </div>
+</form>
